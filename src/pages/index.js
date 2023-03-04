@@ -65,7 +65,7 @@ function UserID(){
 
   if (isLoading) return <p>Loading...</p>
   if (!userID) return <p>No profile data</p>
-  
+  // VERY IMPORTANT!!! Make sure JSON is loaded before rendering.
   if (!images.length) {return null}
   return (
   <p>{JSON.stringify(images[0].title)}</p>
