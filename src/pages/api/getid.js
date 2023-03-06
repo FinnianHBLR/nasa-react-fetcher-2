@@ -12,9 +12,6 @@ export default function handler(req, res) {
     sessionList.push(newID);
     console.log("IDs in use:", sessionList.toString());
 
-    // Send new ID.
-    res.status(200).json({ id: newID })
-
     /* Continuous tracker!! - needs merger logic to remove [] conflicts.
     fs.appendFile('sessions.json', JSON.stringify(sessionList), function (err) {
         if (err) throw err;
@@ -27,4 +24,7 @@ export default function handler(req, res) {
         if (err) throw err;
         console.log('Saved sessions!');
     });
+
+    // Send new ID.
+    res.status(200).json({ id: newID })
 }
