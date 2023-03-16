@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@preact/signals-react": "^1.2.2",
+    "dotenv": "^16.0.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "jest": "^29.4.3",
